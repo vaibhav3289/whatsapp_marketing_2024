@@ -1,0 +1,46 @@
+RewriteEngine on
+
+RewriteRule ^checklogin?$ login_check.php
+RewriteRule ^insertpayment/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+) inset_payment.php?idate=$1&customer_id=$2&cust_type=$3&name=$4&loan=$5&Installment=$6&ledger=$7&emi_amt=$8
+
+
+#12-12-2023
+RewriteRule ^newhospitalexe?$ hospital_exe.php
+RewriteRule ^updatehospital?$ update_hospital.php
+RewriteRule ^hospitaldelete/([^/]+) delete_hospital.php?id=$1
+
+#13-12-2023
+
+RewriteRule ^newdoctorexe?$ doctor_exe.php
+RewriteRule ^updatedoctor?$ update_doctor.php
+RewriteRule ^doctordelete/([^/]+) delete_doctor.php?id=$1
+
+RewriteRule ^newchildrenexe?$ children_exe.php
+RewriteRule ^updatechildren?$ update_children.php
+RewriteRule ^childrendelete/([^/]+) delete_children.php?id=$1
+
+RewriteRule ^newgroupexe?$ group_exe.php
+RewriteRule ^updategroup?$ update_group.php
+RewriteRule ^groupdel/([^/]+) del_group.php?id=$1
+
+
+RewriteRule ^newvaccinenexe?$ vaccine_exe.php
+RewriteRule ^updatevaccine?$ update_vaccine.php
+RewriteRule ^vaccinedelete/([^/]+) del_vaccine.php?id=$1
+
+RewriteRule ^upgrpsr/([^/]+)/([^/]+) update_grp_sr.php?id=$1&val=$2
+
+RewriteRule ^upsrvac/([^/]+)/([^/]+) update_sr_vac.php?id=$1&val=$2
+
+RewriteRule ^addvaccinedata?$ add_vaccine_data.php
+
+
+RewriteRule ^delvacdata/([^/]+)/([^/]+) delete_vaccine_data.php?id=$1&token=$2
+
+RewriteRule ^wpsetting?$ wp_setting.php
+
+RewriteRule ^cancelchildv/([^/]+)/([^/]+) cancel_child_vaccine.php?v_id=$1&id=$2
+
+RewriteRule ^delpendingdata?$ del_pending_data.php
+
+RewriteRule ^delsenddata?$ del_send_data.php

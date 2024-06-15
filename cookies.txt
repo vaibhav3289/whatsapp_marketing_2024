@@ -1,0 +1,8 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+app.gctsoft.in	TRUE	/	FALSE	1999999999	csrf_cookie	b3f426d6f5032340f02c8921a8c40fb4
+app.gctsoft.in	TRUE	/	FALSE	1999999999	stackpost_session	ltom2ebmh8lhaongqa10m0adbls4s96k
+app.gctsoft.in	TRUE	/	FALSE	1999999999	uid	deleted
+app.gctsoft.in	TRUE	/	FALSE	1999999999	team_id	deleted
+app.gctsoft.in	TRUE	/	FALSE	1999999999	SameSite	Lax
+

@@ -1,0 +1,58 @@
+RewriteEngine on
+RewriteRule ^login?$ index.php
+RewriteRule ^home?$ day_home.php
+RewriteRule ^acclogout?$ logout.php
+#12-12-2023
+
+RewriteRule ^hospitaldetail?$ hospital_detail.php
+RewriteRule ^newform?$ hospital_form.php
+RewriteRule ^updathospital/([^/]+) update_hospital.php?id=$1
+
+#13-12-2023
+
+RewriteRule ^doctordetail?$ doctor_detail.php
+RewriteRule ^newdoctorform?$ doctor_form.php
+RewriteRule ^updatedoctor/([^/]+) update_doctor.php?id=$1
+
+RewriteRule ^childrendetail?$ children_detail.php
+RewriteRule ^newchildrenform?$ children_form.php
+RewriteRule ^updatechildren/([^/]+) update_children.php?id=$1
+
+RewriteRule ^groupdetail?$ group_detail.php
+RewriteRule ^newgroupform?$ group_form.php
+RewriteRule ^updategroup/([^/]+) update_group.php?id=$1
+
+
+RewriteRule ^vaccinedetail?$ vaccine_detail.php
+RewriteRule ^newvaccineform?$ vaccine_form.php
+RewriteRule ^updatevaccine/([^/]+) update_vaccine.php?id=$1
+
+RewriteRule ^lodoctor/([^/]+)  load_doctor.php?id=$1
+
+RewriteRule ^prichildvaccine/([^/]+) print_child_vaccine.php?id=$1
+
+RewriteRule ^lvaccinedata/([^/]+) loadvaccine_data.php?id=$1
+
+RewriteRule ^givevaccine/([^/]+)  give_vaccine_child.php?id=$1
+
+RewriteRule ^smssetting?$ sms_setting.php
+RewriteRule ^wpserver?$ wp_server.php
+
+RewriteRule ^wpsendmsgrpt?$ wp_send_msg_rpt.php
+
+RewriteRule ^wppendingmsg?$  wp_pending_msg.php
+
+RewriteRule ^advaccine?$ advance_vaccine.php
+
+
+RewriteRule ^priadvvaccine/([^/]+)/([^/]+)/([^/]+) print_advance_vaccine.php?to=$1&from=$2&type=$3
+
+
+RewriteRule ^givenvaccine?$ given_vaccine.php
+
+RewriteRule ^printgivenvaccine/([^/]+)/([^/]+)/([^/]+)  print_given_vaccine.php?to=$1&from=$2&type=$3
+
+RewriteRule ^duevaccinerpt?$ due_vaccine_report.php
+
+
+RewriteRule ^printduevaccine/([^/]+)/([^/]+) print_due_vaccine.php?to=$1&type=$2
